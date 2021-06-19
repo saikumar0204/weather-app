@@ -27,12 +27,13 @@ search.addEventListener('keypress',(e)=>{
     }).then(res=>res.json().then(data=>{
       if(data){
           raw.classList.remove('hidden')
+          // place.classList.remove('hidden')
           wind.innerText=data.current.wind_speed+' km/hr';
           temp.innerText=data.current.temperature+' °C';
           precip.innerText=data.current.precip+' mm';
           pressure.innerText=String(data.current.pressure*0.001).slice(0,6)+' bar';
 
-          time.innerText= data.location.timezone_id;
+          
           humid.innerText= data.current.humidity+' %'
           uv.innerText= data.current.uv_index
           
