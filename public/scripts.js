@@ -26,7 +26,7 @@ search.addEventListener('keypress',(e)=>{
       })
     }).then(res=>res.json().then(data=>{
       if(data){
-          raw.classList.remove('hidden')
+          // raw.classList.remove('hidden')
           // place.classList.remove('hidden')
           wind.innerText=data.current.wind_speed+' km/hr';
           temp.innerText=data.current.temperature+' °C';

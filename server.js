@@ -8,7 +8,7 @@ var PORT= process.env.PORT||80
 app.use(express.json())
 app.use(express.static('public'))
 
-var rawdata;
+// var rawdata;
 app.post('/weather',(req,res)=>{
   const url= `http://api.weatherstack.com/current?access_key=${API_KEY}&query=${req.body.place}`
   axios({
@@ -21,10 +21,10 @@ app.post('/weather',(req,res)=>{
   
 })
 
-app.get('/data',(req,res)=>{
+// app.get('/data',(req,res)=>{
 
-  res.json(rawdata);
-})
+//   res.json(rawdata);
+// })
 
 
 
