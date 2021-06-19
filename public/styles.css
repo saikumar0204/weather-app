@@ -52,3 +52,7 @@ body{
   background-color: rgb(243, 164, 90);
 }
 
+.hidden{
+  display: none;
+}
+
